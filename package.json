@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+	"engines": {
+		"node": "16.x"
+	},
+  "scripts": {
+		"dev": "nodemon bin/server.js",
+		"start": "node bin/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "node-fetch": "^3.0.0"
+  }
+}
