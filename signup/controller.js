@@ -27,11 +27,15 @@ const controller = {
         };
 
         const response = await data.json()
-    
-        return res.status(200).json({
-            ok: true,
-            response: response.summary
-        });
+        
+        if (response.summary) {
+            return res.status(data.status).json({
+                ok: true,
+                response: response.summary
+            });
+        }
+
+        return res.status(204).json()
     }
 };
 
