@@ -8,10 +8,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cors());
 
-app.get("/", async (req, res) => {
-    res.send("Hi");
-});
-
 app.use("/signup", userRouter);
 
 export default app;
